@@ -1,0 +1,25 @@
+meta {
+  name: 회원 가입
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/users
+  body: json
+  auth: none
+}
+
+body:json {
+  {
+    "email": "hwanyplaying@gmail.com",
+    "password": "P@ssw0rd1",
+    "name": "문창환",
+    "type": "user",
+    "profileImage": {
+        "originalname": "hwanyplay.jpg",
+        "name": "I1V_-2sDO.jpg",
+        "path": "/files/00-sample/I1V_-2sDO.jpg"
+      }
+  }
+}

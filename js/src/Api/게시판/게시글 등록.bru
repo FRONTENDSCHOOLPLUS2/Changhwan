@@ -1,0 +1,19 @@
+meta {
+  name: 게시글 등록
+  type: http
+  seq: 1
+}
+
+post {
+  url: {{URL}}/posts
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {
+    "type": "{{name}}",
+    "title": "창환 테스트",
+    "content": "창환 등록 테스트 내용 입력"
+  }
+}
